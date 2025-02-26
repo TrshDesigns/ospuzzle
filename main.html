@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Terminal</title>
+  <!-- External CSS and JS Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tuicss@1.0.0/dist/tuicss.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Defer non-critical script -->
+  <script defer src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+</head>
+
+<body>
+  <div id="widthset">
+    <!-- Access Terminal Window -->
+    <div class="tui-window" id="accessTerminal">
+      <fieldset class="tui-fieldset">
+        <legend class="center">Access Terminal v1.0</legend>
+        <p class="center quick-message">Welcome to your system. Initiating Access
+          <span class="dots">
+            <span>.</span><span>.</span><span>.</span>
+          </span>
+        </p>
+        <p>
+          System:
+          <span class="tui-file" data-file="encrypted_truth">Encrypted_Truth_1.0</span>
+        </p>
+        <img id="crystal" class="tui-fieldset glitch-target" style="display: flex; align-self: center;" width="100"
+          src="/img/blank-banshee-crystal.gif" alt="Animated crystal representing system status" />
+      </fieldset>
+    </div>
+
+    <!-- ASCII Pong Game Window -->
+    <div id="pongGame" class="ascii-game" style="display: none;">
+      <h3>Pong ASCII Game</h3>
+      <pre>
+# ASCII Pong Game #
+Player 1: |===| vs |===| Player 2
+Move Left: [A], Right: [D]
+Press Q to Quit
+        </pre>
+      <button class="tui-button" id="closeGameBtn" aria-label="Close Pong Game">Close Game</button>
+    </div>
+
+    <!-- Clock Display -->
+    <div id="clock" class="clock"></div>
+
+    <!-- Dock Navigation Bar -->
+    <nav class="dock tui-fieldset" aria-label="Dock Navigation">
+      <span class="dock-item" data-tool="fileExplorer">
+        <button class="tui-button" aria-label="Open file explorer">Menu</button>
+      </span>
+      <span class="dock-item">
+        <button class="tui-button"><a aria-label="Reboot" href="/index.html">Reboot</a></button>
+      </span>
+    </nav>
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="app.js"></script>
+</body>
+
+</html>

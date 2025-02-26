@@ -1,0 +1,7 @@
+body{
+    background-image:url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDR4OWV6ZDdvaTFyZXM2OGNtZ280em45YWNyMDNydjdpeGlseWtzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1Z9hwoxM8bLplJDX2S/giphy.gif");
+    filter:blur(100); 
+    filter: contrast(1);
+    filter: sepia(1);  
+    max-width: 80% ;
+}

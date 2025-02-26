@@ -1,0 +1,235 @@
+* {
+    transition: transform 0.2s ease-in-out;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+/* Style for the progress bar */
+#progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #4caf50;
+    transition: width 0.5s ease-in-out;
+}
+
+/* CSS for the flickering effect */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    40% {
+        opacity: 0.8;
+    }
+
+    60% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* Apply the flicker effect to warning windows */
+.warning-window {
+    animation: flicker 1s infinite;
+    transition: opacity 0.1s linear;
+}
+
+
+.warning-window {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    padding: 10px;
+    width: 250px;
+    color: white;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: darkred;
+}
+
+/* Add boot sequence styles */
+.boot-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: #33ff33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Courier New', monospace;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.boot-logo {
+    font-size: 24px;
+    white-space: pre;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #33ff33;
+    /* Match your existing boot logo color */
+    text-shadow:
+        0 0 7px #33ff33,
+        0 0 15px #33ff33,
+        0 0 20px #33ff33,
+        0 0 30px #3ed2ff,
+        0 0 40px #ee33ff;
+}
+
+.boot-text {
+    font-size: 16px;
+    opacity: 0;
+    animation: typewriter 0.5s steps(40, end) forwards;
+}
+
+@keyframes typewriter {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.window-header {
+    padding: 5px;
+    background-color: #333;
+    color: #33ff33;
+    display: flex;
+    justify-content: flex-end;
+    cursor: move;
+    user-select: none;
+}
+
+.window-content {
+    padding: 10px;
+}
+
+.warning-window {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #33ff33;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(51, 255, 51, 0.3);
+}
+
+.tui-window {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.tui-window-header {
+    background: #000;
+    color: #00ff00;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    user-select: none;
+    border-bottom: 1px solid #00ff00;
+}
+
+.tui-window-content {
+    padding: 10px;
+}
+
+.ascii-art {
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.tui-panel {
+    border: 1px solid #00ff00;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#progress-bar {
+    color: #33ff33;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.9em !important;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 0 2 5px #33ff33;
+    white-space: pre;
+    line-height: 1.2;
+    color: #00ff00;
+    text-align: center;
+    animation: --pulseGlow ease-in-out 3s;
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 5px #33ff33;
+    }
+
+    50% {
+        text-shadow: 0 0 15px #33ff33, 0 0 25px #33ff33;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #33ff33;
+    }
+}
+
+.ascii-art:hover {
+    animation: shakeArt 0.5s infinite;
+}
+
+@keyframes shakeArt {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-1px) translateY(1px);
+    }
+
+    50% {
+        transform: translateX(1px) translateY(-1px);
+    }
+
+    75% {
+        transform: translateX(-1px) translateY(-1px);
+    }
+}
