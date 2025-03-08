@@ -7,12 +7,12 @@
 *Note: This project is evolving, and features may shift as development progresses. Here’s what’s currently available:*
 
 - **Custom Sounds**  
-  Unique audio elements tailored to enhance the experience.
+  Uniquely crafted audio elements tailored to enhance the experience with the matching aesthetics and vibes.
 
 - ![First Access](https://i.ibb.co/S75Tcfzx/Captura-desde-2025-02-17-15-18-37.png)
 
 - **Interactive Windows**  
-  - Draggable pop-up "duck windows" that users can freely move across the screen.  
+  - Draggable pop-upd snf windows that users can freely move across the screen.  
 
   ![Ducky Ducky Booting Sequence](https://i.ibb.co/nMgJrybB/Captura-desde-2025-02-13-13-28-45.png)
 
@@ -33,13 +33,13 @@
   Design every quack, honk, and beep from the ground up for a truly unique auditory experience.
 
 - **🕹️ Player Action Tracking**  
-  Record clicks and drags to enhance the OS’s responsiveness, adapting dynamically to user behavior, as well as adding cross windows events to mix applications for new outcomes
+  Record clicks and drags to enhance the OS’s responsiveness, adapting dynamically to user behavior, as well as adding cross windows events to mix applications for new outcomes and much more.
 
 - **🧩 IT-Themed Puzzles**  
-  Introduce Information Technology-inspired challenges to deepen the puzzle-solving experience.
+  Introduce Information Technology-inspired story programs and more
 
-- **🐣 Tamagotchi Twist**  
-  Nurture a key system component like a Tamagotchi to unlock new areas and features of the OS.
+- **🐣 Tamagotchi**  
+  Nurture a key system component a Tamagotchi to unlock features of the OS.
 
 - **📱 Basic Apps: Music Player & More**  
   Launch mini-apps like a music player (in testing), calculator, and browser, interconnected with clever puzzles and witty nods to internet culture.
