@@ -141,21 +141,7 @@ Anomaly: Hyperreal states merging.`,
 
     return { init };
   })();
-
-  /* Game Module: Manages the ASCII Pong Game window */
-  const GameModule = (function () {
-    function startGame() {
-      $('pongGame').style.display = 'block';
-    }
-    function closeGame() {
-      $('pongGame').style.display = 'none';
-    }
-    function init() {
-      $('closeGameBtn').addEventListener('click', closeGame);
-    }
-    return { startGame, closeGame, init };
-  })();
-
+  
   /* Dock Module: Opens tools from the dock */
   const DockModule = (function () {
     function openTool(tool) {
@@ -277,7 +263,6 @@ Anomaly: Hyperreal states merging.`,
     File
     // Initialize all modules
     FileModule.init();
-    GameModule.init();
     DockModule.init();
     ClockModule.init();
     InteractionModule.init();
@@ -302,20 +287,6 @@ Anomaly: Hyperreal states merging.`,
   }
 
   return { init };
-})();
-
-/* Game Module: Manages the ASCII Pong Game window */
-const GameModule = (function () {
-  function startGame() {
-    $('pongGame').style.display = 'block';
-  }
-  function closeGame() {
-    $('pongGame').style.display = 'none';
-  }
-  function init() {
-    $('closeGameBtn').addEventListener('click', closeGame);
-  }
-  return { startGame, closeGame, init };
 })();
 
 /* Dock Module: Opens tools from the dock */
@@ -456,7 +427,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize all modules
   FileModule.init();
-  GameModule.init();
   DockModule.init();
   ClockModule.init();
   InteractionModule.init();

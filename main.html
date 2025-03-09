@@ -31,26 +31,14 @@
           src="/img/blank-banshee-crystal.gif" alt="Animated crystal representing system status" />
       </fieldset>
     </div>
-
-    <!-- ASCII Pong Game Window -->
-    <div id="pongGame" class="ascii-game" style="display: none;">
-      <h3>Pong ASCII Game</h3>
-      <pre>
-# ASCII Pong Game #
-Player 1: |===| vs |===| Player 2
-Move Left: [A], Right: [D]
-Press Q to Quit
-        </pre>
-      <button class="tui-button" id="closeGameBtn" aria-label="Close Pong Game">Close Game</button>
-    </div>
-
+    
     <!-- Clock Display -->
     <div id="clock" class="clock"></div>
 
     <!-- Dock Navigation Bar -->
     <nav class="dock tui-fieldset" aria-label="Dock Navigation">
-      <span class="dock-item" data-tool="fileExplorer">
-        <button class="tui-button" aria-label="Open file explorer">Menu</button>
+      <span class="dock-item" data-tool="terminal">
+        <button class="tui-button" aria-label="Open file explorer">Terminal</button>
       </span>
       <span class="dock-item">
         <button class="tui-button"><a aria-label="Reboot" href="/index.html">Reboot</a></button>
