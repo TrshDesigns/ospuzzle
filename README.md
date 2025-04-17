@@ -2,7 +2,7 @@
 
 ## Nostalgic Web Puzzle Game
 
-### In Development: 0.1% |=__________| 100%
+### In Development: 0.7% |=__________| 100%
 
 *Note: This project is evolving, and features may shift as development progresses. Here’s what’s currently available:*
 
@@ -18,19 +18,16 @@
 
 ---
 
-# 🌟 Ideas for the Future 🌟
+# In progress
 
-- **🎶 Custom Sound Handler with Effects**  
-  Integrate JavaScript libraries to create dynamic, immersive audio effects.
+- **Custom Sound Handler with Effects**  
+  Integrate dynamic and immersive audio control and effects.
 
-- **📖 Story Features**  
-  Craft a whimsical narrative around glitched "Os," transforming the terminal into an engaging and mysterious tale.
+- **Story Features**  
+  Follow the progression of the game to unlock different story lines in the game, a narrative surrounding the dystopic game world in which your os fits 
 
-- **🎵 Custom Soundtrack in Progress**  
-  Develop original tracks to define the game’s atmosphere, replacing generic sounds with a tailored sonic identity.
-
-- **🔊 Fully Customized Soundscape**  
-  Design every quack, honk, and beep from the ground up for a truly unique auditory experience.
+- **Custom Soundtrack in Progress**  
+  Original songs to fit the retro ambient of the game
 
 - **🕹️ Player Action Tracking**  
   Record clicks and drags to enhance the OS’s responsiveness, adapting dynamically to user behavior, as well as adding cross windows events to mix applications for new outcomes and much more.
@@ -40,6 +37,3 @@
 
 - **🐣 Tamagotchi**  
   Nurture a key system component a Tamagotchi to unlock features of the OS.
-
-- **📱 Basic Apps: Music Player & More**  
-  Launch mini-apps like a music player (in testing), calculator, and browser, interconnected with clever puzzles and witty nods to internet culture.
